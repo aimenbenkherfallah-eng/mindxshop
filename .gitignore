@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables (NEVER commit real secrets)
+.env
+.env.local
+**/.env
+!**/.env.example
+
+# Build output
+client/dist/
+client/build/
+
+# Uploaded product/review images (local disk storage)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
