@@ -51,6 +51,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // --- Routes ----------------------------------------------------------------
 app.get('/api/health', (req, res) => res.json({ success: true, message: 'Sidahmed Shop API is running' }));
+app.get('/', (req, res) => res.json({ success: true, message: 'Sidahmed Shop API — see /api/health' }));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
